@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="calculator-heading">Basic Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="display" readonly>
+            <div>
+                <input type="button" class="clear-button2" value="7" onclick="addToDisplay('7')">
+                <input type="button" class="clear-button2" value="8" onclick="addToDisplay('8')">
+                <input type="button" class="clear-button2" value="9" onclick="addToDisplay('9')">
+                <input type="button" class="clear-button2" value="÷" onclick="addToDisplay('/')">
+            </div>
+            <div>
+                <input type="button" class="clear-button2" value="4" onclick="addToDisplay('4')">
+                <input type="button" class="clear-button2" value="5" onclick="addToDisplay('5')">
+                <input type="button" class="clear-button2" value="6" onclick="addToDisplay('6')">
+                <input type="button" class="clear-button2" value="X" onclick="addToDisplay('*')">
+            </div>
+            <div>
+                <input type="button" class="clear-button2" value="1" onclick="addToDisplay('1')">
+                <input type="button" class="clear-button2" value="2" onclick="addToDisplay('2')">
+                <input type="button" class="clear-button2" value="3" onclick="addToDisplay('3')">
+                <input type="button" class="clear-button2" value="-" onclick="addToDisplay('-')">
+            </div>
+            <div>
+                <input type="button" class="clear-button1" value="AC" onclick="clearAll()">
+                <input type="button" class="clear-button2" value="0" onclick="addToDisplay('0')">
+                <input type="button" class="clear-button1" value="C" onclick="clearLast()">
+                <input type="button" class="clear-button2" value="+" onclick="addToDisplay('+')">
+            </div>
+            <div>
+                <input type="button" class="clear-button2" value="=" onclick="calculate()"> 
+                <input type="button" class="clear-button2" value="." onclick="addToDisplay('.')">  
+            </div>
+        </div>
+         <script src="script.js"></script>
+</body>
+</html>
